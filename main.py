@@ -6,13 +6,11 @@ def saudacao(nome: str) -> str:
         raise TypeError("Nome deve ser uma string")
     return f"Olá, {nome}! Bem-vindo ao sistema."
 
-
 def calcular_media(notas: list) -> float:
     """Calcula a média de uma lista de notas."""
     if not notas:
         raise ValueError("Lista de notas não pode ser vazia")
     return sum(notas) / len(notas)
-
 
 if __name__ == "__main__":
     print(saudacao("Aluno FATEC"))
@@ -24,5 +22,3 @@ def buscar_usuario_seguro(user_id):
     # ✅ Query parametrizada — sem risco de SQL Injection
     cursor.execute("SELECT * FROM users WHERE id=?", (user_id,))
     return cursor.fetchone()
-
-
