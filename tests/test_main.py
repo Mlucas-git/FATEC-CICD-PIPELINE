@@ -1,11 +1,7 @@
-import sys
-from pathlib import Path
-
 import pytest  # type: ignore
 
 from main import saudacao, calcular_media
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
 
 class TestSaudacao:
     def test_saudacao_nome_valido(self):
