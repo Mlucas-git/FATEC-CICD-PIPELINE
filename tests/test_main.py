@@ -1,8 +1,10 @@
 
 # tests/test_main.py
-import pytest
-from main import saudacao, calcular_media
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
+from main import saudacao, calcular_media
 
 class TestSaudacao:
     def test_saudacao_nome_valido(self):
