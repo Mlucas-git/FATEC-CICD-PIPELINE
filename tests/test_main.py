@@ -1,9 +1,7 @@
-
-# tests/test_main.py
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
-import pytest # type: ignore
+import pytest# type: ignore
 from main import saudacao, calcular_media
 
 class TestSaudacao:
